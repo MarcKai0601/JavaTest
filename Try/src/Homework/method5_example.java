@@ -1,0 +1,51 @@
+/*使用下面的方法头编写方法，按升序显示三个数：
+
+public static void displaySortedNumbers(double numl, double num2, double num3)*/
+package Homework;
+
+import java.util.Scanner;
+
+public class method5_example {
+
+    /**
+     * Main Method
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create Scanner
+
+        // Prompt the user to enter three numbers
+        System.out.print("Enter three numbers: ");
+        double number1 = input.nextDouble();
+        double number2 = input.nextDouble();
+        double number3 = input.nextDouble();
+
+        // Display numbers in increasing order
+        displaySortedNumbers(number1, number2, number3);
+    }
+
+    /**
+     * displaySortedNumbers Method displays three numbers in increasing order
+     */
+    public static void displaySortedNumbers(
+            double num1, double num2, double num3) {
+        double temp; // Hold number to swap
+
+        if (num2 < num1 && num2 < num3) {
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+        } else if (num3 < num1 && num3 < num2) {
+            temp = num1;
+            num1 = num3;
+            num3 = temp;
+        }
+        if (num3 < num2) {
+            temp = num2;
+            num2 = num3;
+            num3 = temp;
+        }
+
+        // Display result
+        System.out.println(num1 + " " + num2 + " " + num3);
+    }
+}
