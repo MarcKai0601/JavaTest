@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class VarArgsDemo2 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Max();
+        //Scanner input = new Scanner(System.in);
+        Max(1,4,100,7,2,6,42,93,25);
         //Max();
 
     }
