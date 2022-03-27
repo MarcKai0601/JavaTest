@@ -14,6 +14,6 @@ public class ArrayOperatel5 {
             }
         }
         System.out.printf("max = "+ max);
-        System.out.println(" indexOfmax =" + indexOfmax);
+        System.out.println(" indexOfmax = " + indexOfmax);
     }
 }

@@ -10,8 +10,10 @@ public class ArrayOperatel3 {
 
         double total = 0;
         for (int i = 0 ; i < mylist.length ; i++){
+            System.out.print(mylist[i] + " ");
             total += mylist[i];
         }
-        System.out.printf("total" + total);
+        System.out.println();
+        System.out.printf("total " + total);
     }
 }
