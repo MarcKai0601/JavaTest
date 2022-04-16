@@ -17,7 +17,7 @@ public class ArrayWork1 {
             Score[i] = input.nextDouble();
         }
 
-        getGrades(Score,grades);//使用getGrades方法
+        getGrades(Score,grades);//使用getGrades方法,帶入Score,grades
 
         for (int i = 0; i < Score.length; i++) {
             System.out.println("Student " + i + " score is " +
@@ -26,18 +26,18 @@ public class ArrayWork1 {
     }
     //判斷分數最大值
     public static double Max(double[] array) { //因為判斷完的值要給main以外的方法使用,所以需要回傳
-        Double max = array[0];
-        for (int i = 1; i < array.length; i++) {
+        Double max = array[0];                 //宣告一個max變數=array[0]
+        for (int i = 1; i < array.length; i++) {    //利用for做循環,用if做判斷,若array[i]的值大於max則取代max的值
             if (max < array[i]) {
                 max = array[i];
             }
         }
-        return max;
+        return max;         //回傳判斷過後,數列中的最大值
     }
     //判斷評分
     public static void getGrades(double[] Score,char[] grades){
-        double best = Max(Score);
-        for (int i =0;i< Score.length;i++){
+        double best = Max(Score);       //取用Max的值
+        for (int i =0;i< Score.length;i++){     
             if (Score[i] >= best - 10) {
                 grades[i] = 'A';
             } else if (Score[i] >= best - 20) {
