@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ArrayWork1 {
 
-    //public double Score{}
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
